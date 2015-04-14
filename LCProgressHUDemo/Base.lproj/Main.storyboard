@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LCProgressHUD演示" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbx-Nb-kDx">
+                                <rect key="frame" x="10" y="36" width="294" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="EsK-jU-sxN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQj-tA-b5O">
+                                <rect key="frame" x="110" y="179" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="GuM-OB-CZw"/>
+                                    <constraint firstAttribute="height" constant="30" id="VdG-eB-F0Y"/>
+                                </constraints>
+                                <state key="normal" title="成功">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSuccess" destination="BYZ-38-t0r" eventType="touchUpInside" id="oFJ-CC-fHG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRH-hu-Tp7">
+                                <rect key="frame" x="110" y="239" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="38v-02-NvT"/>
+                                    <constraint firstAttribute="width" constant="100" id="U4S-Du-amI"/>
+                                </constraints>
+                                <state key="normal" title="失败">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showError" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rwd-0n-F3u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2f-gG-eTd">
+                                <rect key="frame" x="110" y="299" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="261-bv-xFx"/>
+                                    <constraint firstAttribute="height" constant="30" id="8tI-Ej-Y89"/>
+                                </constraints>
+                                <state key="normal" title="等待">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showWaitting" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ot-lN-Y1v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUM-Hm-uQc">
+                                <rect key="frame" x="110" y="359" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="14R-y1-aJW"/>
+                                    <constraint firstAttribute="width" constant="100" id="xHm-dm-NVr"/>
+                                </constraints>
+                                <state key="normal" title="等待(无文字)">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showWaittingWithoutText" destination="BYZ-38-t0r" eventType="touchUpInside" id="FAr-ku-T9T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fUM-Hm-uQc" firstAttribute="width" secondItem="MQj-tA-b5O" secondAttribute="width" id="07l-Q0-Y02"/>
+                            <constraint firstAttribute="centerY" secondItem="gRH-hu-Tp7" secondAttribute="centerY" constant="30" id="7Ec-ho-0ol"/>
+                            <constraint firstItem="fUM-Hm-uQc" firstAttribute="height" secondItem="W2f-gG-eTd" secondAttribute="height" id="81y-wX-Aed"/>
+                            <constraint firstAttribute="centerX" secondItem="W2f-gG-eTd" secondAttribute="centerX" id="DHA-3b-c9o"/>
+                            <constraint firstAttribute="centerX" secondItem="MQj-tA-b5O" secondAttribute="centerX" id="Hgx-Ns-Czh"/>
+                            <constraint firstItem="gRH-hu-Tp7" firstAttribute="top" secondItem="MQj-tA-b5O" secondAttribute="bottom" constant="30" id="SSF-w4-e6j"/>
+                            <constraint firstItem="fUM-Hm-uQc" firstAttribute="height" secondItem="gRH-hu-Tp7" secondAttribute="height" id="VeS-dL-FSu"/>
+                            <constraint firstItem="qbx-Nb-kDx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="We4-2z-yxu"/>
+                            <constraint firstAttribute="centerX" secondItem="fUM-Hm-uQc" secondAttribute="centerX" id="bo8-0l-Fip"/>
+                            <constraint firstItem="fUM-Hm-uQc" firstAttribute="width" secondItem="gRH-hu-Tp7" secondAttribute="width" id="dnY-sg-yAH"/>
+                            <constraint firstItem="fUM-Hm-uQc" firstAttribute="top" secondItem="W2f-gG-eTd" secondAttribute="bottom" constant="30" id="ebh-PP-avB"/>
+                            <constraint firstItem="fUM-Hm-uQc" firstAttribute="width" secondItem="W2f-gG-eTd" secondAttribute="width" id="fVt-29-W5f"/>
+                            <constraint firstAttribute="centerX" secondItem="gRH-hu-Tp7" secondAttribute="centerX" id="fm9-VD-qkl"/>
+                            <constraint firstItem="fUM-Hm-uQc" firstAttribute="height" secondItem="MQj-tA-b5O" secondAttribute="height" id="ie2-Rx-rfv"/>
+                            <constraint firstItem="qbx-Nb-kDx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="lyd-ch-pbY"/>
+                            <constraint firstAttribute="trailing" secondItem="qbx-Nb-kDx" secondAttribute="trailing" constant="16" id="nfN-5T-aqe"/>
+                            <constraint firstItem="W2f-gG-eTd" firstAttribute="top" secondItem="gRH-hu-Tp7" secondAttribute="bottom" constant="30" id="s59-2c-BAS"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160" y="336"/>
+        </scene>
+    </scenes>
+</document>
