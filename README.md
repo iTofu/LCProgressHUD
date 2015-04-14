@@ -13,7 +13,7 @@
 `[LCProgressHUD showStatus:LCProgressHUDStatusWaitting text:@"正在加载"];`<br>
 `[LCProgressHUD showStatus:LCProgressHUDStatusWaitting text:nil];`<br><br>
 
-###### 隐藏HUD:
+###### 手动隐藏HUD:
 `[LCProgressHUD hide:YES keep:NO];`<br><br>
 怎么样，是不是超简单，哈哈~<br><br><br>
 
