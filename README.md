@@ -21,4 +21,6 @@
 1> HUD是添加到当前的window上而不是当前的view上，若实在需要可以去LCProgressHUD中修改。<br>
 1> 加载成功/失败的图片在"LCProgressHUD/HUDImage"文件夹下面，可自由更换，注意把名字改成我一样的即可(当然你也可以去改代码，不嫌麻烦的话)。<br>
 2> "加载成功"这个Label的字体在LCProgressHUD.m文件中可以修改，默认14px。<br>
-3> 我提供了一个单例方法`[LCProgressHUD sharedHUD]`，可以拿到当前的HUD，以备更多操作。<br>
+3> 我提供了一个单例方法`[LCProgressHUD sharedHUD]`，可以拿到当前的HUD，以备更多操作。<br><br><br>
+
+* Email: leoios@sina.com <请尽量不要在GitHub上联系我，谢谢>
