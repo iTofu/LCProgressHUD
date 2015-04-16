@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>34575A61-5950-4FD6-A0AD-635F36CFE0C2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LCProgressHUDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A9019F1573EF57A179FF9F991FA45E6B58851C37</key>
+		<string>https://github.com/LeoiOS/LCProgressHUD.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LCProgressHUDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A9019F1573EF57A179FF9F991FA45E6B58851C37</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/LeoiOS/LCProgressHUD.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A9019F1573EF57A179FF9F991FA45E6B58851C37</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A9019F1573EF57A179FF9F991FA45E6B58851C37</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LCProgressHUD</string>
+		</dict>
+	</array>
+</dict>
+</plist>

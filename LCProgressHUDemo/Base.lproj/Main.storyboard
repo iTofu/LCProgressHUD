@@ -26,7 +26,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQj-tA-b5O">
-                                <rect key="frame" x="110" y="179" width="100" height="30"/>
+                                <rect key="frame" x="110" y="209" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="GuM-OB-CZw"/>
                                     <constraint firstAttribute="height" constant="30" id="VdG-eB-F0Y"/>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRH-hu-Tp7">
-                                <rect key="frame" x="110" y="239" width="100" height="30"/>
+                                <rect key="frame" x="110" y="269" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="38v-02-NvT"/>
                                     <constraint firstAttribute="width" constant="100" id="U4S-Du-amI"/>
@@ -52,7 +52,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2f-gG-eTd">
-                                <rect key="frame" x="110" y="299" width="100" height="30"/>
+                                <rect key="frame" x="110" y="329" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="261-bv-xFx"/>
                                     <constraint firstAttribute="height" constant="30" id="8tI-Ej-Y89"/>
@@ -65,7 +65,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUM-Hm-uQc">
-                                <rect key="frame" x="110" y="359" width="100" height="30"/>
+                                <rect key="frame" x="110" y="389" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="14R-y1-aJW"/>
                                     <constraint firstAttribute="width" constant="100" id="xHm-dm-NVr"/>
@@ -77,19 +77,35 @@
                                     <action selector="showWaittingWithoutText" destination="BYZ-38-t0r" eventType="touchUpInside" id="FAr-ku-T9T"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atc-3H-JFz">
+                                <rect key="frame" x="110" y="149" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BoY-Of-ma9"/>
+                                    <constraint firstAttribute="width" constant="100" id="NFa-ka-eef"/>
+                                </constraints>
+                                <state key="normal" title="文字">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showText" destination="BYZ-38-t0r" eventType="touchUpInside" id="8g6-et-EaR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fUM-Hm-uQc" firstAttribute="width" secondItem="MQj-tA-b5O" secondAttribute="width" id="07l-Q0-Y02"/>
-                            <constraint firstAttribute="centerY" secondItem="gRH-hu-Tp7" secondAttribute="centerY" constant="30" id="7Ec-ho-0ol"/>
+                            <constraint firstAttribute="centerY" secondItem="gRH-hu-Tp7" secondAttribute="centerY" id="7Ec-ho-0ol"/>
                             <constraint firstItem="fUM-Hm-uQc" firstAttribute="height" secondItem="W2f-gG-eTd" secondAttribute="height" id="81y-wX-Aed"/>
+                            <constraint firstItem="fUM-Hm-uQc" firstAttribute="width" secondItem="atc-3H-JFz" secondAttribute="width" id="C4R-hN-Y3T"/>
                             <constraint firstAttribute="centerX" secondItem="W2f-gG-eTd" secondAttribute="centerX" id="DHA-3b-c9o"/>
+                            <constraint firstAttribute="centerX" secondItem="atc-3H-JFz" secondAttribute="centerX" id="FxD-QX-YoQ"/>
                             <constraint firstAttribute="centerX" secondItem="MQj-tA-b5O" secondAttribute="centerX" id="Hgx-Ns-Czh"/>
                             <constraint firstItem="gRH-hu-Tp7" firstAttribute="top" secondItem="MQj-tA-b5O" secondAttribute="bottom" constant="30" id="SSF-w4-e6j"/>
                             <constraint firstItem="fUM-Hm-uQc" firstAttribute="height" secondItem="gRH-hu-Tp7" secondAttribute="height" id="VeS-dL-FSu"/>
                             <constraint firstItem="qbx-Nb-kDx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="We4-2z-yxu"/>
                             <constraint firstAttribute="centerX" secondItem="fUM-Hm-uQc" secondAttribute="centerX" id="bo8-0l-Fip"/>
                             <constraint firstItem="fUM-Hm-uQc" firstAttribute="width" secondItem="gRH-hu-Tp7" secondAttribute="width" id="dnY-sg-yAH"/>
+                            <constraint firstItem="MQj-tA-b5O" firstAttribute="top" secondItem="atc-3H-JFz" secondAttribute="bottom" constant="30" id="e1i-0g-M5h"/>
                             <constraint firstItem="fUM-Hm-uQc" firstAttribute="top" secondItem="W2f-gG-eTd" secondAttribute="bottom" constant="30" id="ebh-PP-avB"/>
                             <constraint firstItem="fUM-Hm-uQc" firstAttribute="width" secondItem="W2f-gG-eTd" secondAttribute="width" id="fVt-29-W5f"/>
                             <constraint firstAttribute="centerX" secondItem="gRH-hu-Tp7" secondAttribute="centerX" id="fm9-VD-qkl"/>
@@ -97,6 +113,7 @@
                             <constraint firstItem="qbx-Nb-kDx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="lyd-ch-pbY"/>
                             <constraint firstAttribute="trailing" secondItem="qbx-Nb-kDx" secondAttribute="trailing" constant="16" id="nfN-5T-aqe"/>
                             <constraint firstItem="W2f-gG-eTd" firstAttribute="top" secondItem="gRH-hu-Tp7" secondAttribute="bottom" constant="30" id="s59-2c-BAS"/>
+                            <constraint firstItem="fUM-Hm-uQc" firstAttribute="height" secondItem="atc-3H-JFz" secondAttribute="height" id="vOK-hS-5wy"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

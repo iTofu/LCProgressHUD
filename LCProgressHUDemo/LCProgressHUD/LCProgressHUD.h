@@ -5,7 +5,7 @@
 //  Created by 刘超 on 15/4/14.
 //  Copyright (c) 2015年 Leo. All rights reserved.
 //
-//  Email: leoios@sina.com
+//  * Email: leoios@sina.com
 //
 //  活动指示器
 
@@ -28,7 +28,20 @@ typedef NS_ENUM(NSInteger, LCProgressHUDStatus) {
 /** 在window上添加一个HUD */
 + (void)showStatus:(LCProgressHUDStatus)status text:(NSString *)text;
 
-/** 隐藏HUD 是否保留该实例 默认否 */
-+ (void)hide:(BOOL)animated keep:(BOOL)keep;
+
+
+#pragma mark - 建议使用的方法
+
+/** 在window上添加一个显示文字的HUD */
++ (void)showText:(NSString *)text;
+/** 在window上添加一个提示`失败`的HUD */
++ (void)showErrorText:(NSString *)text;
+/** 在window上添加一个提示`成功`的HUD */
++ (void)showSuccessText:(NSString *)text;
+/** 在window上添加一个提示`等待`的HUD, 需要手动关闭 */
++ (void)showWaittingText:(NSString *)text;
+
+/** 手动隐藏HUD */
++ (void)hide;
 
 @end

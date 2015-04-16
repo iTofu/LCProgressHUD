@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "LCProgressHUD.h"
 
+#define TIME 2.0f
+
 @interface ViewController ()
 
 @end
@@ -19,41 +21,52 @@
     [super viewDidLoad];
 }
 
+- (IBAction)showText {
+    
+    [LCProgressHUD showText:@"心有林夕"];
+    
+    [NSTimer scheduledTimerWithTimeInterval:TIME
+                                     target:self
+                                   selector:@selector(hideHUD)
+                                   userInfo:nil
+                                    repeats:NO];
+}
+
 - (IBAction)showSuccess {
     
-    [LCProgressHUD showStatus:LCProgressHUDStatusSuccess text:@"加载成功"];
+    [LCProgressHUD showSuccessText:@"加载成功"];
 }
 
 - (IBAction)showError {
     
-    [LCProgressHUD showStatus:LCProgressHUDStatusError text:@"加载失败"];
+    [LCProgressHUD showErrorText:@"加载失败"];
 }
 
 - (IBAction)showWaitting {
     
-    [LCProgressHUD showStatus:LCProgressHUDStatusWaitting text:@"正在加载"];
+    [LCProgressHUD showWaittingText:@"正在加载"];
     
-    [NSTimer scheduledTimerWithTimeInterval:3.0f
+    [NSTimer scheduledTimerWithTimeInterval:TIME
                                      target:self
-                                   selector:@selector(hideHUD)
+                                   selector:@selector(showSuccess)
                                    userInfo:nil
                                     repeats:NO];
 }
 
 - (IBAction)showWaittingWithoutText {
     
-    [LCProgressHUD showStatus:LCProgressHUDStatusWaitting text:nil];
+    [LCProgressHUD showWaittingText:nil];
     
-    [NSTimer scheduledTimerWithTimeInterval:3.0f
+    [NSTimer scheduledTimerWithTimeInterval:TIME
                                      target:self
-                                   selector:@selector(hideHUD)
+                                   selector:@selector(showError)
                                    userInfo:nil
                                     repeats:NO];
 }
 
 - (void)hideHUD {
     
-    [LCProgressHUD hide:YES keep:NO];
+    [LCProgressHUD hide];
 }
 
 @end

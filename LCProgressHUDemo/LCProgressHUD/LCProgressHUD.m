@@ -5,8 +5,16 @@
 //  Created by 刘超 on 15/4/14.
 //  Copyright (c) 2015年 Leo. All rights reserved.
 //
+//  * Email: leoios@sina.com
+//
+//  活动指示器
 
 #import "LCProgressHUD.h"
+
+// 背景视图的宽度/高度
+#define BGVIEW_WIDTH 100.0f
+// 文字大小
+#define TEXT_SIZE 14.0f
 
 @implementation LCProgressHUD
 
@@ -27,8 +35,8 @@
     [hud show:YES];
     hud.removeFromSuperViewOnHide = YES;
     hud.labelText = text;
-    hud.labelFont = [UIFont systemFontOfSize:14.0f];
-    hud.minSize = CGSizeMake(120.0f, 120.0f);
+    hud.labelFont = [UIFont systemFontOfSize:TEXT_SIZE];
+    hud.minSize = CGSizeMake(BGVIEW_WIDTH, BGVIEW_WIDTH);
     switch (status) {
         case LCProgressHUDStatusSuccess: {
             hud.mode = MBProgressHUDModeCustomView;
@@ -53,13 +61,36 @@
     }
 }
 
-+ (void)hide:(BOOL)animated keep:(BOOL)keep {
++ (void)showText:(NSString *)text {
     
     LCProgressHUD *hud = [LCProgressHUD sharedHUD];
-    [hud hide:YES];
-    if (keep == NO) {
-        hud = nil;
-    }
+    [[UIApplication sharedApplication].keyWindow addSubview:hud];
+    [hud show:YES];
+    hud.removeFromSuperViewOnHide = YES;
+    hud.labelText = text;
+    hud.labelFont = [UIFont systemFontOfSize:TEXT_SIZE];
+    hud.minSize = CGSizeZero;
+    hud.mode = MBProgressHUDModeText;
+}
+
++ (void)showErrorText:(NSString *)text {
+    
+    [self showStatus:LCProgressHUDStatusError text:text];
+}
+
++ (void)showSuccessText:(NSString *)text {
+    
+    [self showStatus:LCProgressHUDStatusSuccess text:text];
+}
+
++ (void)showWaittingText:(NSString *)text {
+    
+    [self showStatus:LCProgressHUDStatusWaitting text:text];
+}
+
++ (void)hide {
+    
+    [[LCProgressHUD sharedHUD] hide:YES];
 }
 
 @end
