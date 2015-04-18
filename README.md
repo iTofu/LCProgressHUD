@@ -3,7 +3,7 @@
 
 ![image](https://github.com/LeoiOS/LCProgressHUD/blob/master/HUDemo.gif)<br>
 
-好吧我只是觉得MBProgressHUD太麻烦了，所以再搞了一遍，一行代码即可。<br><br>
+好吧我只是觉得MBProgressHUD太麻烦了，所以再搞了一遍，一行代码即可完成调用。<br><br>
 
 ##### 示例(已更新):
 1> 导入"LCProgressHUD"文件夹到你的项目中(文件夹在Demo中可以找到);<br>
