@@ -1,5 +1,5 @@
-# LCProgressHUD
-### 一个超简单的活动指示器 <br><br>
+## LCProgressHUD
+一个超简单的活动指示器 <br><br>
 
 ![image](https://github.com/LeoiOS/LCProgressHUD/blob/master/HUDemo.gif)<br>
 
@@ -9,14 +9,17 @@
 1> 导入"LCProgressHUD"文件夹到你的项目中(文件夹在Demo中可以找到);<br>
 2> 在你需要使用的viewController中，`#import "LCProgressHUD.h"`;<br>
 3> 敲下列任一行代码:<br>
-`[LCProgressHUD showText:@"心有林夕"];`<br>
-`[LCProgressHUD showErrorText:@"加载失败"];` <br>
-`[LCProgressHUD showSuccessText:@"加载成功"];`<br>
-`[LCProgressHUD showWaittingText:@"正在加载"];`<br>
-`[LCProgressHUD showWaittingText:nil];`<br><br>
+  ```
+  [LCProgressHUD showText:@"心有林夕"];
+  [LCProgressHUD showErrorText:@"加载失败"];
+  [LCProgressHUD showSuccessText:@"加载成功"];
+  [LCProgressHUD showWaittingText:@"正在加载"];
+  [LCProgressHUD showWaittingText:nil];
+  ```
 
 ##### 手动隐藏HUD(已更新):
-`[LCProgressHUD hide];`<br><br>
+  [LCProgressHUD hide];
+  
 怎么样，是不是超简单，哈哈~<br><br><br>
 
 ##### 2015.04.16 更新日志:
