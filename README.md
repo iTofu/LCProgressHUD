@@ -27,6 +27,8 @@
   ```objc
   [LCProgressHUD hide];
   ```
+
+
 怎么样，是不是超简单，哈哈~
 
 
