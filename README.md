@@ -24,6 +24,7 @@
   [LCProgressHUD showWaittingText:nil];
   ```
 * 如果想手动隐藏HUD(一般用来隐藏“等待”状态的HUD)
+  
   ```objc
   [LCProgressHUD hide];
   ```
