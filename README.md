@@ -12,17 +12,19 @@
 * 导入`LCProgressHUD`文件夹到你的项目中(文件夹在Demo中可以找到);
 * 在你需要使用的viewController中，`#import "LCProgressHUD.h"`;
 * 敲下列任一行代码:
+
   ```objc
   [LCProgressHUD showText:@"心有林夕"];
   
-  [LCProgressHUD showErrorText:@"加载失败"];
+  [LCProgressHUD showFailureText:@"加载失败"];
   
   [LCProgressHUD showSuccessText:@"加载成功"];
   
-  [LCProgressHUD showWaittingText:@"正在加载"];
+  [LCProgressHUD showLoadingText:@"正在加载"];
   
-  [LCProgressHUD showWaittingText:nil];
+  [LCProgressHUD showLoadingText:nil];
   ```
+
 * 如果想手动隐藏HUD(一般用来隐藏“等待”状态的HUD)
   
   ```objc
@@ -33,16 +35,19 @@
 怎么样，是不是超简单，哈哈~
 
 
-### 2015.04.16 更新日志 Logs
-* 更简单了!
-* 类方法 + 不再需要写LCProgressHUDStatusError这种东西! 不要太爽!
-* 保留了上个版本的+ showStatus:text:方法，需要的自己调用，推荐使用更新后的新方法！
+### 更新日志 2015.05.05 Update Logs
+* 适配处女座开发者，统一`showFailureText:`、`showSuccessText:`、`showLoadingText:`方法的长度。
+* 优化显示效果。Label的字体大小默认是15px，原来是14px。
 
+### 更新日志 2015.04.16 Update Logs
+* 更简单了！
+* 类方法！ + 不再需要写LCProgressHUDStatusError这种东西！不要太爽！
+* 保留了上个版本的+ showStatus:text:方法，需要的自己调用，推荐使用更新后的新方法！
 
 ### 提示 Tips 
 * HUD是添加到当前的window上而不是当前的view上，若实在需要可以去LCProgressHUD中修改。
 * 加载成功/失败的图片在"LCProgressHUD/HUDImage"文件夹下面，可自由更换，注意把名字改成我一样的即可(当然你也可以去改代码，不嫌麻烦的话)。
-* "加载成功"这个Label的字体在LCProgressHUD.m文件中可以修改，默认14px。
+* "加载成功"这个Label的字体在LCProgressHUD.m文件中可以修改，默认15px。
 * 我提供了一个单例方法`[LCProgressHUD sharedHUD]`，可以拿到当前的HUD，以备更多操作。
 
 

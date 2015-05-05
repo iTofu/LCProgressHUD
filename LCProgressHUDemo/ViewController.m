@@ -39,12 +39,12 @@
 
 - (IBAction)showError {
     
-    [LCProgressHUD showErrorText:@"加载失败"];
+    [LCProgressHUD showFailureText:@"加载失败"];
 }
 
 - (IBAction)showWaitting {
     
-    [LCProgressHUD showWaittingText:@"正在加载"];
+    [LCProgressHUD showLoadingText:@"正在加载"];
     
     [NSTimer scheduledTimerWithTimeInterval:TIME
                                      target:self
@@ -55,7 +55,7 @@
 
 - (IBAction)showWaittingWithoutText {
     
-    [LCProgressHUD showWaittingText:nil];
+    [LCProgressHUD showLoadingText:nil];
     
     [NSTimer scheduledTimerWithTimeInterval:TIME
                                      target:self
