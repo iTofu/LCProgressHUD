@@ -54,7 +54,7 @@
 ### 联系 Support
 * 发现问题请lssues我，谢谢:)
 * Email:    leoios@sina.com
-* Website:  http://www.leodong.com/ (备案中……)
+* Website:  http://www.leodong.com/
 
 
 ### 授权 License
