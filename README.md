@@ -40,7 +40,9 @@
   
   ```objc
   - (void)showFailureText;
+  
   - (void)showSuccessText;
+  
   - (void)showLoadingText;
   ```
   
