@@ -36,13 +36,18 @@
 
 
 ### 更新日志 2015.05.05 Update Logs
-* 适配处女座开发者，统一`showFailureText:`、`showSuccessText:`、`showLoadingText:`方法的长度。
-* 优化显示效果。Label的字体大小默认是15px，原来是14px。
+* 适配处女座开发者，统一以下方法的长度：
+  ```objc
+  - (void)showFailureText;
+  - (void)showSuccessText;
+  - (void)showLoadingText;
+  ```
+* 优化显示效果。Label的字体大小现在是15px，原来是14px。
 
 ### 更新日志 2015.04.16 Update Logs
 * 更简单了！
-* 类方法！ + 不再需要写LCProgressHUDStatusError这种东西！不要太爽！
-* 保留了上个版本的+ showStatus:text:方法，需要的自己调用，推荐使用更新后的新方法！
+* 类方法！并且不再需要写LCProgressHUDStatusError这种东西！不要太爽！
+* 保留了上个版本的`+showStatus:text:`方法，需要的自己调用，推荐调用更新后的方法！
 
 ### 提示 Tips 
 * HUD是添加到当前的window上而不是当前的view上，若实在需要可以去LCProgressHUD中修改。
@@ -54,7 +59,7 @@
 ### 联系 Support
 * 发现问题请lssues我，谢谢:)
 * Email:leoios@sina.com
-* Blog: http://www.leodong.com/
+* Blog: http://www.leodong.com
 
 
 ### 授权 License
