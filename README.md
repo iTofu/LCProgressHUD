@@ -37,11 +37,13 @@
 
 ### 更新日志 2015.05.05 Update Logs
 * 适配处女座开发者，统一以下方法的长度：
+  
   ```objc
   - (void)showFailureText;
   - (void)showSuccessText;
   - (void)showLoadingText;
   ```
+  
 * 优化显示效果。Label的字体大小现在是15px，原来是14px。
 
 ### 更新日志 2015.04.16 Update Logs
