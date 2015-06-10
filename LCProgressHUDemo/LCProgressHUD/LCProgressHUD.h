@@ -18,6 +18,9 @@ typedef NS_ENUM(NSInteger, LCProgressHUDStatus) {
     /** 失败 */
     LCProgressHUDStatusError,
     
+    /** 信息 */
+    LCProgressHUDStatusInfo,
+    
     /** 加载中 */
     LCProgressHUDStatusWaitting
 };
@@ -36,6 +39,8 @@ typedef NS_ENUM(NSInteger, LCProgressHUDStatus) {
 
 /** 在window上添加一个只显示文字的HUD */
 + (void)showText:(NSString *)text;
+/** 在window上添加一个提示`信息`的HUD */
++ (void)showInfoText:(NSString *)text;
 /** 在window上添加一个提示`失败`的HUD */
 + (void)showFailureText:(NSString *)text;
 /** 在window上添加一个提示`成功`的HUD */

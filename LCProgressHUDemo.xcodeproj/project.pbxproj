@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B31E6D6D1B2804D5005FFA05 /* hud_info.png in Resources */ = {isa = PBXBuildFile; fileRef = B31E6D6B1B2804D5005FFA05 /* hud_info.png */; };
+		B31E6D6E1B2804D5005FFA05 /* hud_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B31E6D6C1B2804D5005FFA05 /* hud_info@2x.png */; };
 		B379ED8C1ADCEC71009570EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B379ED8B1ADCEC71009570EF /* main.m */; };
 		B379ED8F1ADCEC71009570EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B379ED8E1ADCEC71009570EF /* AppDelegate.m */; };
 		B379ED921ADCEC71009570EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B379ED911ADCEC71009570EF /* ViewController.m */; };
@@ -18,10 +20,8 @@
 		B379EDC21ADCECA4009570EF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B379EDBA1ADCECA4009570EF /* MBProgressHUD.m */; };
 		B379EDDE1ADCF596009570EF /* hud_success.png in Resources */ = {isa = PBXBuildFile; fileRef = B379EDD81ADCF596009570EF /* hud_success.png */; };
 		B379EDDF1ADCF596009570EF /* hud_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B379EDD91ADCF596009570EF /* hud_success@2x.png */; };
-		B379EDE01ADCF596009570EF /* hud_success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B379EDDA1ADCF596009570EF /* hud_success@3x.png */; };
 		B379EDE41ADCF618009570EF /* hud_error.png in Resources */ = {isa = PBXBuildFile; fileRef = B379EDE11ADCF618009570EF /* hud_error.png */; };
 		B379EDE51ADCF618009570EF /* hud_error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B379EDE21ADCF618009570EF /* hud_error@2x.png */; };
-		B379EDE61ADCF618009570EF /* hud_error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B379EDE31ADCF618009570EF /* hud_error@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B31E6D6B1B2804D5005FFA05 /* hud_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hud_info.png; sourceTree = "<group>"; };
+		B31E6D6C1B2804D5005FFA05 /* hud_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hud_info@2x.png"; sourceTree = "<group>"; };
 		B379ED861ADCEC71009570EF /* LCProgressHUDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCProgressHUDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B379ED8A1ADCEC71009570EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B379ED8B1ADCEC71009570EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,10 +56,8 @@
 		B379EDBA1ADCECA4009570EF /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		B379EDD81ADCF596009570EF /* hud_success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hud_success.png; sourceTree = "<group>"; };
 		B379EDD91ADCF596009570EF /* hud_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hud_success@2x.png"; sourceTree = "<group>"; };
-		B379EDDA1ADCF596009570EF /* hud_success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hud_success@3x.png"; sourceTree = "<group>"; };
 		B379EDE11ADCF618009570EF /* hud_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hud_error.png; sourceTree = "<group>"; };
 		B379EDE21ADCF618009570EF /* hud_error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hud_error@2x.png"; sourceTree = "<group>"; };
-		B379EDE31ADCF618009570EF /* hud_error@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hud_error@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,10 +155,10 @@
 			children = (
 				B379EDE11ADCF618009570EF /* hud_error.png */,
 				B379EDE21ADCF618009570EF /* hud_error@2x.png */,
-				B379EDE31ADCF618009570EF /* hud_error@3x.png */,
 				B379EDD81ADCF596009570EF /* hud_success.png */,
 				B379EDD91ADCF596009570EF /* hud_success@2x.png */,
-				B379EDDA1ADCF596009570EF /* hud_success@3x.png */,
+				B31E6D6B1B2804D5005FFA05 /* hud_info.png */,
+				B31E6D6C1B2804D5005FFA05 /* hud_info@2x.png */,
 			);
 			path = HUDImage;
 			sourceTree = "<group>";
@@ -246,11 +246,11 @@
 				B379EDDF1ADCF596009570EF /* hud_success@2x.png in Resources */,
 				B379EDDE1ADCF596009570EF /* hud_success.png in Resources */,
 				B379ED951ADCEC71009570EF /* Main.storyboard in Resources */,
+				B31E6D6E1B2804D5005FFA05 /* hud_info@2x.png in Resources */,
+				B31E6D6D1B2804D5005FFA05 /* hud_info.png in Resources */,
 				B379ED9A1ADCEC71009570EF /* LaunchScreen.xib in Resources */,
-				B379EDE61ADCF618009570EF /* hud_error@3x.png in Resources */,
 				B379EDE41ADCF618009570EF /* hud_error.png in Resources */,
 				B379ED971ADCEC71009570EF /* Images.xcassets in Resources */,
-				B379EDE01ADCF596009570EF /* hud_success@3x.png in Resources */,
 				B379EDE51ADCF618009570EF /* hud_error@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -55,13 +55,7 @@
 
 - (IBAction)showWaittingWithoutText {
     
-    [LCProgressHUD showLoadingText:nil];
-    
-    [NSTimer scheduledTimerWithTimeInterval:TIME
-                                     target:self
-                                   selector:@selector(showError)
-                                   userInfo:nil
-                                    repeats:NO];
+    [LCProgressHUD showInfoText:@"请输入账号"];
 }
 
 - (void)hideHUD {

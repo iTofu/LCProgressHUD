@@ -16,6 +16,8 @@
   ```objc
   [LCProgressHUD showText:@"心有林夕"];
   
+  [LCProgressHUD showInfoText:@"请输入账号"];
+  
   [LCProgressHUD showFailureText:@"加载失败"];
   
   [LCProgressHUD showSuccessText:@"加载成功"];
@@ -31,9 +33,16 @@
   [LCProgressHUD hide];
   ```
 
-
 怎么样，是不是超简单，哈哈~
 
+
+
+### 更新日志 2015.06.10 Update Logs
+* 1. 添加提示“信息”功能：
+````objc
+[LCProgressHUD showInfoText:@"请输入账号"];
+````
+* 2. 更换“成功”、“失败”的图片，更加友好:-)
 
 ### 更新日志 2015.05.05 Update Logs
 * 适配处女座开发者，统一以下方法的长度：
@@ -61,7 +70,7 @@
 
 
 ### 联系 Support
-* 发现问题请lssues我，谢谢:)
+* 发现问题请lssues我，谢谢:-)
 * Email:leoios@sina.com
 * Blog: http://www.leodong.com
 

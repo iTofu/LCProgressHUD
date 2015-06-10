@@ -64,6 +64,15 @@
         }
             break;
             
+        case LCProgressHUDStatusInfo: {
+            
+            hud.mode = MBProgressHUDModeCustomView;
+            UIImageView *errView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hud_info"]];
+            hud.customView = errView;
+            [hud hide:YES afterDelay:1.2f];
+        }
+            break;
+            
         default:
             break;
     }
@@ -79,6 +88,11 @@
     [hud setRemoveFromSuperViewOnHide:YES];
     [hud setLabelFont:[UIFont systemFontOfSize:TEXT_SIZE]];
     [[UIApplication sharedApplication].keyWindow addSubview:hud];
+}
+
++ (void)showInfoText:(NSString *)text {
+    
+    [self showStatus:LCProgressHUDStatusInfo text:text];
 }
 
 + (void)showFailureText:(NSString *)text {
