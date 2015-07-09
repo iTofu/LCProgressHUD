@@ -13,7 +13,7 @@
 // 背景视图的宽度/高度
 #define BGVIEW_WIDTH 100.0f
 // 文字大小
-#define TEXT_SIZE 15.0f
+#define TEXT_SIZE 16.0f
 
 @implementation LCProgressHUD
 
@@ -34,7 +34,7 @@
     [hud show:YES];
     [hud setLabelText:text];
     [hud setRemoveFromSuperViewOnHide:YES];
-    [hud setLabelFont:[UIFont systemFontOfSize:TEXT_SIZE]];
+    [hud setLabelFont:[UIFont boldSystemFontOfSize:TEXT_SIZE]];
     [hud setMinSize:CGSizeMake(BGVIEW_WIDTH, BGVIEW_WIDTH)];
     [[UIApplication sharedApplication].keyWindow addSubview:hud];
     
@@ -86,7 +86,7 @@
     [hud setMinSize:CGSizeZero];
     [hud setMode:MBProgressHUDModeText];
     [hud setRemoveFromSuperViewOnHide:YES];
-    [hud setLabelFont:[UIFont systemFontOfSize:TEXT_SIZE]];
+    [hud setLabelFont:[UIFont boldSystemFontOfSize:TEXT_SIZE]];
     [[UIApplication sharedApplication].keyWindow addSubview:hud];
 }
 
