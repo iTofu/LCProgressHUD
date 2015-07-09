@@ -45,7 +45,7 @@
             hud.mode = MBProgressHUDModeCustomView;
             UIImageView *sucView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hud_success"]];
             hud.customView = sucView;
-            [hud hide:YES afterDelay:1.2f];
+            [hud hide:YES afterDelay:1.6f];
         }
             break;
             
@@ -54,7 +54,7 @@
             hud.mode = MBProgressHUDModeCustomView;
             UIImageView *errView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hud_error"]];
             hud.customView = errView;
-            [hud hide:YES afterDelay:1.2f];
+            [hud hide:YES afterDelay:1.6f];
         }
             break;
             
@@ -69,7 +69,7 @@
             hud.mode = MBProgressHUDModeCustomView;
             UIImageView *errView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hud_info"]];
             hud.customView = errView;
-            [hud hide:YES afterDelay:1.2f];
+            [hud hide:YES afterDelay:1.6f];
         }
             break;
             
