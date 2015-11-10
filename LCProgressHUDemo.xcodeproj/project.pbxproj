@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B31E6D6D1B2804D5005FFA05 /* hud_info.png in Resources */ = {isa = PBXBuildFile; fileRef = B31E6D6B1B2804D5005FFA05 /* hud_info.png */; };
-		B31E6D6E1B2804D5005FFA05 /* hud_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B31E6D6C1B2804D5005FFA05 /* hud_info@2x.png */; };
+		B32758D41BF195DF001792DA /* LCProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B32758CF1BF195DF001792DA /* LCProgressHUD.bundle */; };
+		B32758D51BF195DF001792DA /* LCProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B32758D11BF195DF001792DA /* LCProgressHUD.m */; };
+		B32758DA1BF196CF001792DA /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B32758D91BF196CF001792DA /* MBProgressHUD.m */; };
 		B379ED8C1ADCEC71009570EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B379ED8B1ADCEC71009570EF /* main.m */; };
 		B379ED8F1ADCEC71009570EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B379ED8E1ADCEC71009570EF /* AppDelegate.m */; };
 		B379ED921ADCEC71009570EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B379ED911ADCEC71009570EF /* ViewController.m */; };
@@ -16,12 +17,6 @@
 		B379ED971ADCEC71009570EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B379ED961ADCEC71009570EF /* Images.xcassets */; };
 		B379ED9A1ADCEC71009570EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B379ED981ADCEC71009570EF /* LaunchScreen.xib */; };
 		B379EDA61ADCEC71009570EF /* LCProgressHUDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B379EDA51ADCEC71009570EF /* LCProgressHUDemoTests.m */; };
-		B379EDC11ADCECA4009570EF /* LCProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B379EDB81ADCECA4009570EF /* LCProgressHUD.m */; };
-		B379EDC21ADCECA4009570EF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B379EDBA1ADCECA4009570EF /* MBProgressHUD.m */; };
-		B379EDDE1ADCF596009570EF /* hud_success.png in Resources */ = {isa = PBXBuildFile; fileRef = B379EDD81ADCF596009570EF /* hud_success.png */; };
-		B379EDDF1ADCF596009570EF /* hud_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B379EDD91ADCF596009570EF /* hud_success@2x.png */; };
-		B379EDE41ADCF618009570EF /* hud_error.png in Resources */ = {isa = PBXBuildFile; fileRef = B379EDE11ADCF618009570EF /* hud_error.png */; };
-		B379EDE51ADCF618009570EF /* hud_error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B379EDE21ADCF618009570EF /* hud_error@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B31E6D6B1B2804D5005FFA05 /* hud_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hud_info.png; sourceTree = "<group>"; };
-		B31E6D6C1B2804D5005FFA05 /* hud_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hud_info@2x.png"; sourceTree = "<group>"; };
+		B32758CF1BF195DF001792DA /* LCProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LCProgressHUD.bundle; sourceTree = "<group>"; };
+		B32758D01BF195DF001792DA /* LCProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCProgressHUD.h; sourceTree = "<group>"; };
+		B32758D11BF195DF001792DA /* LCProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCProgressHUD.m; sourceTree = "<group>"; };
+		B32758D81BF196CF001792DA /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		B32758D91BF196CF001792DA /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		B379ED861ADCEC71009570EF /* LCProgressHUDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCProgressHUDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B379ED8A1ADCEC71009570EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B379ED8B1ADCEC71009570EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,14 +48,6 @@
 		B379ED9F1ADCEC71009570EF /* LCProgressHUDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCProgressHUDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B379EDA41ADCEC71009570EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B379EDA51ADCEC71009570EF /* LCProgressHUDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCProgressHUDemoTests.m; sourceTree = "<group>"; };
-		B379EDB71ADCECA4009570EF /* LCProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCProgressHUD.h; sourceTree = "<group>"; };
-		B379EDB81ADCECA4009570EF /* LCProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCProgressHUD.m; sourceTree = "<group>"; };
-		B379EDB91ADCECA4009570EF /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		B379EDBA1ADCECA4009570EF /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		B379EDD81ADCF596009570EF /* hud_success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hud_success.png; sourceTree = "<group>"; };
-		B379EDD91ADCF596009570EF /* hud_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hud_success@2x.png"; sourceTree = "<group>"; };
-		B379EDE11ADCF618009570EF /* hud_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hud_error.png; sourceTree = "<group>"; };
-		B379EDE21ADCF618009570EF /* hud_error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hud_error@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +68,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B32758CE1BF195DF001792DA /* LCProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B32758CF1BF195DF001792DA /* LCProgressHUD.bundle */,
+				B32758D01BF195DF001792DA /* LCProgressHUD.h */,
+				B32758D11BF195DF001792DA /* LCProgressHUD.m */,
+			);
+			path = LCProgressHUD;
+			sourceTree = "<group>";
+		};
+		B32758D71BF196CF001792DA /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B32758D81BF196CF001792DA /* MBProgressHUD.h */,
+				B32758D91BF196CF001792DA /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		B379ED7D1ADCEC71009570EF = {
 			isa = PBXGroup;
 			children = (
+				B32758CE1BF195DF001792DA /* LCProgressHUD */,
+				B32758D71BF196CF001792DA /* MBProgressHUD */,
 				B379ED881ADCEC71009570EF /* LCProgressHUDemo */,
 				B379EDA21ADCEC71009570EF /* LCProgressHUDemoTests */,
 				B379ED871ADCEC71009570EF /* Products */,
@@ -99,7 +110,6 @@
 		B379ED881ADCEC71009570EF /* LCProgressHUDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B379EDAF1ADCECA4009570EF /* LCProgressHUD */,
 				B379ED8D1ADCEC71009570EF /* AppDelegate.h */,
 				B379ED8E1ADCEC71009570EF /* AppDelegate.m */,
 				B379ED901ADCEC71009570EF /* ViewController.h */,
@@ -136,31 +146,6 @@
 				B379EDA41ADCEC71009570EF /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B379EDAF1ADCECA4009570EF /* LCProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				B379EDD41ADCF596009570EF /* HUDImage */,
-				B379EDB71ADCECA4009570EF /* LCProgressHUD.h */,
-				B379EDB81ADCECA4009570EF /* LCProgressHUD.m */,
-				B379EDB91ADCECA4009570EF /* MBProgressHUD.h */,
-				B379EDBA1ADCECA4009570EF /* MBProgressHUD.m */,
-			);
-			path = LCProgressHUD;
-			sourceTree = "<group>";
-		};
-		B379EDD41ADCF596009570EF /* HUDImage */ = {
-			isa = PBXGroup;
-			children = (
-				B379EDE11ADCF618009570EF /* hud_error.png */,
-				B379EDE21ADCF618009570EF /* hud_error@2x.png */,
-				B379EDD81ADCF596009570EF /* hud_success.png */,
-				B379EDD91ADCF596009570EF /* hud_success@2x.png */,
-				B31E6D6B1B2804D5005FFA05 /* hud_info.png */,
-				B31E6D6C1B2804D5005FFA05 /* hud_info@2x.png */,
-			);
-			path = HUDImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,15 +228,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B379EDDF1ADCF596009570EF /* hud_success@2x.png in Resources */,
-				B379EDDE1ADCF596009570EF /* hud_success.png in Resources */,
 				B379ED951ADCEC71009570EF /* Main.storyboard in Resources */,
-				B31E6D6E1B2804D5005FFA05 /* hud_info@2x.png in Resources */,
-				B31E6D6D1B2804D5005FFA05 /* hud_info.png in Resources */,
+				B32758D41BF195DF001792DA /* LCProgressHUD.bundle in Resources */,
 				B379ED9A1ADCEC71009570EF /* LaunchScreen.xib in Resources */,
-				B379EDE41ADCF618009570EF /* hud_error.png in Resources */,
 				B379ED971ADCEC71009570EF /* Images.xcassets in Resources */,
-				B379EDE51ADCF618009570EF /* hud_error@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,11 +249,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B379EDC11ADCECA4009570EF /* LCProgressHUD.m in Sources */,
 				B379ED921ADCEC71009570EF /* ViewController.m in Sources */,
-				B379EDC21ADCECA4009570EF /* MBProgressHUD.m in Sources */,
 				B379ED8F1ADCEC71009570EF /* AppDelegate.m in Sources */,
+				B32758DA1BF196CF001792DA /* MBProgressHUD.m in Sources */,
 				B379ED8C1ADCEC71009570EF /* main.m in Sources */,
+				B32758D51BF195DF001792DA /* LCProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

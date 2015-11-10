@@ -38,12 +38,17 @@
     [hud setMinSize:CGSizeMake(BGVIEW_WIDTH, BGVIEW_WIDTH)];
     [[UIApplication sharedApplication].keyWindow addSubview:hud];
     
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"LCProgressHUD" ofType:@"bundle"];
+    
     switch (status) {
             
         case LCProgressHUDStatusSuccess: {
             
+            NSString *sucPath = [bundlePath stringByAppendingPathComponent:@"hud_success@2x.png"];
+            UIImage *sucImage = [UIImage imageWithContentsOfFile:sucPath];
+            
             hud.mode = MBProgressHUDModeCustomView;
-            UIImageView *sucView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hud_success"]];
+            UIImageView *sucView = [[UIImageView alloc] initWithImage:sucImage];
             hud.customView = sucView;
             [hud hide:YES afterDelay:1.6f];
         }
@@ -51,8 +56,11 @@
             
         case LCProgressHUDStatusError: {
             
+            NSString *errPath = [bundlePath stringByAppendingPathComponent:@"hud_error@2x.png"];
+            UIImage *errImage = [UIImage imageWithContentsOfFile:errPath];
+            
             hud.mode = MBProgressHUDModeCustomView;
-            UIImageView *errView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hud_error"]];
+            UIImageView *errView = [[UIImageView alloc] initWithImage:errImage];
             hud.customView = errView;
             [hud hide:YES afterDelay:1.6f];
         }
@@ -66,9 +74,12 @@
             
         case LCProgressHUDStatusInfo: {
             
+            NSString *infoPath = [bundlePath stringByAppendingPathComponent:@"hud_info@2x.png"];
+            UIImage *infoImage = [UIImage imageWithContentsOfFile:infoPath];
+            
             hud.mode = MBProgressHUDModeCustomView;
-            UIImageView *errView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"hud_info"]];
-            hud.customView = errView;
+            UIImageView *infoView = [[UIImageView alloc] initWithImage:infoImage];
+            hud.customView = infoView;
             [hud hide:YES afterDelay:1.6f];
         }
             break;
