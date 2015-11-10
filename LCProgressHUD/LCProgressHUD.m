@@ -4,7 +4,7 @@
 //
 //  Email : leoios@sina.com
 //  GitHub: http://github.com/LeoiOS
-//  如有问题或建议请给我发Email, 或在该项目的GitHub主页lssues我, 谢谢:)
+//  如有问题或建议请给我发 Email, 或在该项目的 GitHub 主页 Issues 我, 谢谢:)
 //
 //  活动指示器
 
@@ -13,7 +13,7 @@
 // 背景视图的宽度/高度
 #define BGVIEW_WIDTH 100.0f
 // 文字大小
-#define TEXT_SIZE 16.0f
+#define TEXT_SIZE    16.0f
 
 @implementation LCProgressHUD
 
@@ -50,7 +50,7 @@
             hud.mode = MBProgressHUDModeCustomView;
             UIImageView *sucView = [[UIImageView alloc] initWithImage:sucImage];
             hud.customView = sucView;
-            [hud hide:YES afterDelay:1.6f];
+            [hud hide:YES afterDelay:2.0f];
         }
             break;
             
@@ -62,7 +62,7 @@
             hud.mode = MBProgressHUDModeCustomView;
             UIImageView *errView = [[UIImageView alloc] initWithImage:errImage];
             hud.customView = errView;
-            [hud hide:YES afterDelay:1.6f];
+            [hud hide:YES afterDelay:2.0f];
         }
             break;
             
@@ -80,7 +80,7 @@
             hud.mode = MBProgressHUDModeCustomView;
             UIImageView *infoView = [[UIImageView alloc] initWithImage:infoImage];
             hud.customView = infoView;
-            [hud hide:YES afterDelay:1.6f];
+            [hud hide:YES afterDelay:2.0f];
         }
             break;
             
@@ -89,7 +89,7 @@
     }
 }
 
-+ (void)showText:(NSString *)text {
++ (void)showMessage:(NSString *)text {
     
     LCProgressHUD *hud = [LCProgressHUD sharedHUD];
     [hud show:YES];
@@ -99,24 +99,25 @@
     [hud setRemoveFromSuperViewOnHide:YES];
     [hud setLabelFont:[UIFont boldSystemFontOfSize:TEXT_SIZE]];
     [[UIApplication sharedApplication].keyWindow addSubview:hud];
+    [hud hide:YES afterDelay:2.0f];
 }
 
-+ (void)showInfoText:(NSString *)text {
++ (void)showInfoMsg:(NSString *)text {
     
     [self showStatus:LCProgressHUDStatusInfo text:text];
 }
 
-+ (void)showFailureText:(NSString *)text {
++ (void)showFailure:(NSString *)text {
     
     [self showStatus:LCProgressHUDStatusError text:text];
 }
 
-+ (void)showSuccessText:(NSString *)text {
++ (void)showSuccess:(NSString *)text {
     
     [self showStatus:LCProgressHUDStatusSuccess text:text];
 }
 
-+ (void)showLoadingText:(NSString *)text {
++ (void)showLoading:(NSString *)text {
     
     [self showStatus:LCProgressHUDStatusWaitting text:text];
 }

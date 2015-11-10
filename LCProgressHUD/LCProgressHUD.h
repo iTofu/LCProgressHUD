@@ -4,7 +4,7 @@
 //
 //  Email : leoios@sina.com
 //  GitHub: http://github.com/LeoiOS
-//  如有问题或建议请给我发Email, 或在该项目的GitHub主页lssues我, 谢谢:)
+//  如有问题或建议请给我发 Email, 或在该项目的 GitHub 主页 Issues 我, 谢谢:)
 //
 //  活动指示器
 
@@ -18,37 +18,41 @@ typedef NS_ENUM(NSInteger, LCProgressHUDStatus) {
     /** 失败 */
     LCProgressHUDStatusError,
     
-    /** 信息 */
+    /** 提示 */
     LCProgressHUDStatusInfo,
     
-    /** 加载中 */
+    /** 等待 */
     LCProgressHUDStatusWaitting
 };
 
 @interface LCProgressHUD : MBProgressHUD
 
-/** 返回一个HUD的单例 */
+/** 返回一个 HUD 的单例 */
 + (instancetype)sharedHUD;
 
-/** 在window上添加一个HUD */
+/** 在 window 上添加一个 HUD */
 + (void)showStatus:(LCProgressHUDStatus)status text:(NSString *)text;
 
 
 
 #pragma mark - 建议使用的方法
 
-/** 在window上添加一个只显示文字的HUD */
-+ (void)showText:(NSString *)text;
-/** 在window上添加一个提示`信息`的HUD */
-+ (void)showInfoText:(NSString *)text;
-/** 在window上添加一个提示`失败`的HUD */
-+ (void)showFailureText:(NSString *)text;
-/** 在window上添加一个提示`成功`的HUD */
-+ (void)showSuccessText:(NSString *)text;
-/** 在window上添加一个提示`加载中`的HUD, 需要手动关闭 */
-+ (void)showLoadingText:(NSString *)text;
+/** 在 window 上添加一个只显示文字的 HUD */
++ (void)showMessage:(NSString *)text;
 
-/** 手动隐藏HUD */
+/** 在 window 上添加一个提示`信息`的 HUD */
++ (void)showInfoMsg:(NSString *)text;
+
+/** 在 window 上添加一个提示`失败`的 HUD */
++ (void)showFailure:(NSString *)text;
+
+/** 在 window 上添加一个提示`成功`的 HUD */
++ (void)showSuccess:(NSString *)text;
+
+/** 在 window 上添加一个提示`等待`的 HUD, 需要手动关闭 */
++ (void)showLoading:(NSString *)text;
+
+/** 手动隐藏 HUD */
 + (void)hide;
 
 @end

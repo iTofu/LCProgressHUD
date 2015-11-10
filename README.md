@@ -5,29 +5,35 @@
 
 
 ### 前言 Foreword
-好吧我只是觉得MBProgressHUD太麻烦了，所以再搞了一遍，一行代码即可完成调用。
+好吧我只是觉得 MBProgressHUD 太麻烦了，所以再搞了一遍。
+
+  ```
+  一行代码即可完成调用。
+  ```
 
 
-### 代码(已更新) Code
-* 导入`LCProgressHUD`文件夹到你的项目中(文件夹在Demo中可以找到);
+### 代码 Code
+* 
+  - 方法一：[CocoaPods](https://cocoapods.org/) 导入：`pod 'LCProgressHUD'`
+  - 方法二：导入`LCProgressHUD`文件夹到你的项目中 (文件夹在 Demo 中可以找到)
 * 在你需要使用的viewController中，`#import "LCProgressHUD.h"`;
 * 敲下列任一行代码:
 
   ```objc
-  [LCProgressHUD showText:@"心有林夕"];
+  [LCProgressHUD showMessage:@"心有林夕"];   // 显示文本
   
-  [LCProgressHUD showInfoText:@"请输入账号"];
+  [LCProgressHUD showInfoMsg:@"请输入账号"]; // 显示提示
   
-  [LCProgressHUD showFailureText:@"加载失败"];
+  [LCProgressHUD showFailure:@"加载失败"];   // 显示失败
   
-  [LCProgressHUD showSuccessText:@"加载成功"];
+  [LCProgressHUD showSuccess:@"加载成功"];   // 显示成功
   
-  [LCProgressHUD showLoadingText:@"正在加载"];
+  [LCProgressHUD showLoading:@"正在加载"];   // 显示等待
   
-  [LCProgressHUD showLoadingText:nil];
+  [LCProgressHUD showLoading:nil];          // 显示等待 (无文本)
   ```
 
-* 如果想手动隐藏HUD(一般用来隐藏“等待”状态的HUD)
+* 如果想手动隐藏 HUD (一般用来隐藏“等待”状态的 HUD)
   
   ```objc
   [LCProgressHUD hide];
@@ -36,15 +42,44 @@
 怎么样，是不是超简单，哈哈~
 
 
-### 更新日志 2015.07.9 Update Logs
-* 加粗字体，修改默认字体为`[UIFont boldSystemFontOfSize:16.0f]`。因为我发现包括QQ、支付宝等的HUD都采用加粗来提升显示效果，给用户更清晰的指示。(Demo图我就不重新截了:-))
-* 增加停留时间，由1.2s增加到1.6s，更持久！
+### 更新日志 2015.11.10 Update Logs (tag: 1.0.2)
+* 添加对 [CocoaPods](https://cocoapods.org/) 的支持：`pod 'LCProgressHUD'`
+* 增加默认停留时间，由 1.6s 增加到 2.0s，再持久一点！(可在`LCProgressHUD.m`中手动更改)
+* 极限适配处女座，所有方法长度全部一样！
+
+  ```objc
+  - (void)showFailureText:(NSString *)text; // old
+  ->
+  - (void)showFailure:(NSString *)text;     // new
+  
+  - (void)showSuccessText:(NSString *)text; // old
+  ->
+  - (void)showSuccess:(NSString *)text;     // new
+  
+  - (void)showLoadingText:(NSString *)text; // old
+  ->
+  - (void)showLoading:(NSString *)text;     // new
+  
+  - (void)showInfoText:(NSString *)text;    // old
+  ->
+  - (void)showInfoMsg:(NSString *)text;     // new
+  
+  - (void)showText:(NSString *)text;        // old
+  ->
+  - (void)showMessage:(NSString *)text;     // new
+  
+  ```
 
 
-### 更新日志 2015.06.10 Update Logs
+### 更新日志 2015.07.09 Update Logs (tag: 1.0.0)
+* 加粗字体，修改默认字体为`[UIFont boldSystemFontOfSize:16.0f]`。因为我发现包括 QQ、支付宝等的 HUD 都采用加粗来提升显示效果，给用户更清晰的指示。(Demo 图我就不重新截了:-))
+* 增加默认停留时间，由 1.2s 增加到 1.6s，更持久！
+
+
+### 更新日志 2015.06.10 Update Logs (tag: 1.0.0)
 * 添加提示“信息”功能：
 ````objc
-[LCProgressHUD showInfoText:@"请输入账号"];
+[LCProgressHUD showMessage:@"请输入账号"];
 ````
 * 更换“成功”、“失败”的图片，更加友好:-)
 
@@ -74,7 +109,7 @@
 
 
 ### 联系 Support
-* 发现问题请lssues我，谢谢:-)
+* 发现问题请Issues我，谢谢:-)
 * Email:leoios@sina.com
 * Blog: http://www.leodong.com
 

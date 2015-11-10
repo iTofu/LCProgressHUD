@@ -23,7 +23,7 @@
 
 - (IBAction)showText {
     
-    [LCProgressHUD showText:@"心有林夕"];
+    [LCProgressHUD showMessage:@"心有林夕"];
     
     [NSTimer scheduledTimerWithTimeInterval:TIME
                                      target:self
@@ -34,17 +34,17 @@
 
 - (IBAction)showSuccess {
     
-    [LCProgressHUD showSuccessText:@"加载成功"];
+    [LCProgressHUD showSuccess:@"加载成功"];
 }
 
 - (IBAction)showError {
     
-    [LCProgressHUD showFailureText:@"加载失败"];
+    [LCProgressHUD showFailure:@"加载失败"];
 }
 
 - (IBAction)showWaitting {
     
-    [LCProgressHUD showLoadingText:@"正在加载"];
+    [LCProgressHUD showLoading:@"正在加载"];
     
     [NSTimer scheduledTimerWithTimeInterval:TIME
                                      target:self
@@ -55,7 +55,7 @@
 
 - (IBAction)showWaittingWithoutText {
     
-    [LCProgressHUD showInfoText:@"请输入账号"];
+    [LCProgressHUD showInfoMsg:@"请输入账号"];
 }
 
 - (void)hideHUD {
