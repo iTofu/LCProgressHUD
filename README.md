@@ -20,7 +20,7 @@
 * 
   - 方法一：[CocoaPods](https://cocoapods.org/) 导入：`pod 'LCProgressHUD'`
   - 方法二：导入`LCProgressHUD`文件夹到你的项目中 (文件夹在 Demo 中可以找到)
-* 在你需要使用的viewController中，`#import "LCProgressHUD.h"`;
+* 在你需要使用的 viewController 中，`#import "LCProgressHUD.h"`;
 * 敲下列任一行代码:
 
   ```objc
