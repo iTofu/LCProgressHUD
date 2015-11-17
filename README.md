@@ -10,6 +10,10 @@
   ```
   一行代码即可完成调用。
   ```
+> 如果你不喜欢这么平淡的风格，ok！皮卡丘！~ 
+> 
+> 传送门：[LCCoolHUD](https://github.com/LeoiOS/LCCoolHUD)
+
 
 
 ### 代码 Code
