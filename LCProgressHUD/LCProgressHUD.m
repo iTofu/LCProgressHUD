@@ -32,6 +32,7 @@
     
     LCProgressHUD *hud = [LCProgressHUD sharedHUD];
     [hud show:YES];
+    [hud setShowNow:YES];
     [hud setLabelText:text];
     [hud setRemoveFromSuperViewOnHide:YES];
     [hud setLabelFont:[UIFont boldSystemFontOfSize:TEXT_SIZE]];
@@ -93,13 +94,16 @@
     
     LCProgressHUD *hud = [LCProgressHUD sharedHUD];
     [hud show:YES];
+    [hud setShowNow:YES];
     [hud setLabelText:text];
     [hud setMinSize:CGSizeZero];
     [hud setMode:MBProgressHUDModeText];
     [hud setRemoveFromSuperViewOnHide:YES];
     [hud setLabelFont:[UIFont boldSystemFontOfSize:TEXT_SIZE]];
     [[UIApplication sharedApplication].keyWindow addSubview:hud];
-    [hud hide:YES afterDelay:2.0f];
+//    [hud hide:YES afterDelay:2.0f];
+    
+    [NSTimer scheduledTimerWithTimeInterval:2.0f target:self selector:@selector(hide) userInfo:nil repeats:NO];
 }
 
 + (void)showInfoMsg:(NSString *)text {
@@ -124,6 +128,7 @@
 
 + (void)hide {
     
+    [[LCProgressHUD sharedHUD] setShowNow:NO];
     [[LCProgressHUD sharedHUD] hide:YES];
 }
 

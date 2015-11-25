@@ -27,6 +27,11 @@ typedef NS_ENUM(NSInteger, LCProgressHUDStatus) {
 
 @interface LCProgressHUD : MBProgressHUD
 
+/**
+ *  是否正在显示
+ */
+@property (nonatomic, assign, getter=isShowNow) BOOL showNow;
+
 /** 返回一个 HUD 的单例 */
 + (instancetype)sharedHUD;
 
