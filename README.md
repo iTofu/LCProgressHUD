@@ -1,5 +1,12 @@
 ## LCProgressHUD
-一个超简单的活动指示器 
+
+[![Travis](https://img.shields.io/travis/LeoiOS/LCProgressHUD.svg?style=flat)](https://travis-ci.org/LeoiOS/LCProgressHUD)
+[![CocoaPods](https://img.shields.io/cocoapods/v/LCProgressHUD.svg)](http://cocoadocs.org/docsets/LCProgressHUD)
+[![CocoaPods](https://img.shields.io/cocoapods/l/LCProgressHUD.svg)](https://raw.githubusercontent.com/LeoiOS/LCProgressHUD/master/LICENSE)
+[![CocoaPods](https://img.shields.io/cocoapods/p/LCProgressHUD.svg)](http://cocoadocs.org/docsets/LCProgressHUD)
+[![LeoDev](https://img.shields.io/badge/blog-LeoDev.me-brightgreen.svg)](http://leodev.me)
+
+一个超简单的活动指示器。
 
 ![image](https://github.com/LeoiOS/LCProgressHUD/blob/master/HUDemo.gif)
 
