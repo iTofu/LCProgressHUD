@@ -1,15 +1,15 @@
 Pod::Spec.new do |s|
 
   s.name         = "LCProgressHUD"
-  s.version      = "1.0.3"
-  s.summary      = "A simple progress HUD. Support: http://www.leodong.com"
+  s.version      = "1.0.5"
+  s.summary      = "A simple progress HUD. Support: http://LeoDev.me"
   s.homepage     = "https://github.com/LeoiOS/LCProgressHUD"
   s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.author             = { "Leo" => "leoios@sina.com" }
-  s.social_media_url   = "http://www.leodong.com"
+  s.author             = { "Leo" => "devtip@163.com" }
+  s.social_media_url   = "http://LeoDev.me"
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/LeoiOS/LCProgressHUD.git", :tag => s.version }
-  s.source_files  = "LCProgressHUD/**/*.{h,m}"
+  s.source_files = "LCProgressHUD/**/*.{h,m}"
   s.resource     = 'LCProgressHUD/LCProgressHUD.bundle'
   s.requires_arc = true
 
