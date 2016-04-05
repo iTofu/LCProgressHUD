@@ -1,15 +1,20 @@
 # LCProgressHUD
 
-[![Travis](https://img.shields.io/travis/LeoiOS/LCProgressHUD.svg?style=flat)](https://travis-ci.org/LeoiOS/LCProgressHUD)
+[![Travis](https://img.shields.io/travis/iTofu/LCProgressHUD.svg?style=flat)](https://travis-ci.org/iTofu/LCProgressHUD)
 [![CocoaPods](https://img.shields.io/cocoapods/v/LCProgressHUD.svg)](http://cocoadocs.org/docsets/LCProgressHUD)
-[![CocoaPods](https://img.shields.io/cocoapods/l/LCProgressHUD.svg)](https://raw.githubusercontent.com/LeoiOS/LCProgressHUD/master/LICENSE)
+[![CocoaPods](https://img.shields.io/cocoapods/l/LCProgressHUD.svg)](https://raw.githubusercontent.com/iTofu/LCProgressHUD/master/LICENSE)
 [![CocoaPods](https://img.shields.io/cocoapods/p/LCProgressHUD.svg)](http://cocoadocs.org/docsets/LCProgressHUD)
 [![LeoDev](https://img.shields.io/badge/blog-LeoDev.me-brightgreen.svg)](http://leodev.me)
 
 一个超简单的活动指示器。
 
-![image](https://github.com/LeoiOS/LCProgressHUD/blob/master/HUDemo.gif)
+![image](https://raw.githubusercontent.com/iTofu/LCProgressHUD/master/HUDemo.gif)
 
+````
+In me the tiger sniffs the rose.
+
+心有猛虎，细嗅蔷薇。
+````
 
 ## 前言 Foreword
 
@@ -21,7 +26,7 @@
 
 > 如果你不喜欢这么平淡的风格，ok！皮卡丘！~
 >
-> 传送门：[LCCoolHUD](https://github.com/LeoiOS/LCCoolHUD)
+> 传送门：[LCCoolHUD](https://github.com/iTofu/LCCoolHUD)
 
 
 
@@ -62,6 +67,11 @@
 ## 更新日志 Update Logs
 
 
+### V1.0.6 (2016.04.05)
+
+* 修改 CocoaPods 源地址。
+
+
 ### V1.0.5 (2016.03.XX)
 
 * 添加 building test。
@@ -70,7 +80,9 @@
 ### V1.0.2 (2015.11.10)
 
 * 添加对 [CocoaPods](https://cocoapods.org/) 的支持：`pod 'LCProgressHUD'`。
+
 * 增加默认停留时间，由 1.6s 增加到 2.0s，再持久一点！(可在`LCProgressHUD.m`中手动更改)
+
 * 极限适配处女座，所有方法长度全部一样！
 
   ```objc
@@ -98,7 +110,8 @@
 
 ### V1.0.0 (2015.07.09)
 
-* 加粗字体，修改默认字体为`[UIFont boldSystemFontOfSize:16.0f]`。因为我发现包括 QQ、支付宝等的 HUD 都采用加粗来提升显示效果，给用户更清晰的指示。(Demo 图我就不重新截了:-))
+* 加粗字体，修改默认字体为`[UIFont boldSystemFontOfSize:16.0f]`。因为我发现包括 QQ、支付宝等的 HUD 都采用加粗来提升显示效果，给用户更清晰的指示。（Demo 图我就不重新截了:)）
+
 * 增加默认停留时间，由 1.2s 增加到 1.6s，更持久！
 
 
@@ -110,7 +123,7 @@
   [LCProgressHUD showMessage:@"请输入账号"];
   ````
 
-* 更换“成功”、“失败”的图片，更加友好 :-)
+* 更换“成功”、“失败”的图片，更加友好 :)
 
 
 ### V0.0.1 (2015.05.05)
@@ -152,7 +165,7 @@
 
 ## 联系 Support
 
-* 发现问题请 Issues，谢谢:-)
+* 发现问题请 Issue，谢谢:-)
 
 * Mail: devtip@163.com
 
@@ -160,4 +173,5 @@
 
 
 ## 授权 License
+
 本项目采用 [MIT license](http://opensource.org/licenses/MIT) 开源，你可以利用采用该协议的代码做任何事情，只需要继续继承 MIT 协议即可。

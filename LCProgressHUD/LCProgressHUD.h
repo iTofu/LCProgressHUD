@@ -2,26 +2,26 @@
 //  Created by 刘超 on 15/4/14.
 //  Copyright (c) 2015年 Leo. All rights reserved.
 //
-//  Email : leoios@sina.com
+//  Mail:   mailto:devtip@163.com
 //  GitHub: http://github.com/LeoiOS
-//  如有问题或建议请给我发 Email, 或在该项目的 GitHub 主页 Issues 我, 谢谢:)
+//  如有问题或建议请给我发 Email, 或在该项目的 GitHub 主页提 Issue, 谢谢 :)
 //
 //  活动指示器
-//  V 1.0.3
+//  V 1.0.6
 
 #import "MBProgressHUD.h"
 
 typedef NS_ENUM(NSInteger, LCProgressHUDStatus) {
-    
+
     /** 成功 */
     LCProgressHUDStatusSuccess,
-    
+
     /** 失败 */
     LCProgressHUDStatusError,
-    
+
     /** 提示 */
     LCProgressHUDStatusInfo,
-    
+
     /** 等待 */
     LCProgressHUDStatusWaitting
 };
