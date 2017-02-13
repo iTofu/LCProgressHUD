@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		139C783282CB336D98AAEFDF /* libPods-LCProgressHUDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F25F6FFC2ECA23329E7BEB6 /* libPods-LCProgressHUDemo.a */; };
 		B32758D41BF195DF001792DA /* LCProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B32758CF1BF195DF001792DA /* LCProgressHUD.bundle */; };
 		B32758D51BF195DF001792DA /* LCProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B32758D11BF195DF001792DA /* LCProgressHUD.m */; };
 		B379ED8C1ADCEC71009570EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B379ED8B1ADCEC71009570EF /* main.m */; };
@@ -60,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				139C783282CB336D98AAEFDF /* libPods-LCProgressHUDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
