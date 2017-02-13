@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LCProgressHUD"
-  s.version      = "1.0.6"
+  s.version      = "1.0.7"
   s.summary      = "A simple progress HUD. Support: http://LeoDev.me"
   s.homepage     = "https://github.com/iTofu/LCProgressHUD"
   s.license      = { :type => "MIT", :file => "LICENSE" }

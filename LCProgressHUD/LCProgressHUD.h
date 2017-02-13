@@ -7,7 +7,7 @@
 //  如有问题或建议请给我发 Email, 或在该项目的 GitHub 主页提 Issue, 谢谢 :)
 //
 //  活动指示器
-//  V 1.0.6
+//  V 1.0.7
 
 #import "MBProgressHUD.h"
 

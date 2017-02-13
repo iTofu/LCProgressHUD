@@ -67,17 +67,22 @@ In me the tiger sniffs the rose.
 ## 更新日志 Update Logs
 
 
-### V1.0.6 (2016.04.05)
+### V 1.0.7 (2017.02.13)
+
+* Fix [Issue 2](https://github.com/iTofu/LCProgressHUD/issues/2).
+
+
+### V 1.0.6 (2016.04.05)
 
 * 修改 CocoaPods 源地址。
 
 
-### V1.0.5 (2016.03.XX)
+### V 1.0.5 (2016.03.XX)
 
 * 添加 building test。
 
 
-### V1.0.2 (2015.11.10)
+### V 1.0.2 (2015.11.10)
 
 * 添加对 [CocoaPods](https://cocoapods.org/) 的支持：`pod 'LCProgressHUD'`。
 
@@ -108,14 +113,14 @@ In me the tiger sniffs the rose.
   ```
 
 
-### V1.0.0 (2015.07.09)
+### V 1.0.0 (2015.07.09)
 
 * 加粗字体，修改默认字体为`[UIFont boldSystemFontOfSize:16.0f]`。因为我发现包括 QQ、支付宝等的 HUD 都采用加粗来提升显示效果，给用户更清晰的指示。（Demo 图我就不重新截了:)）
 
 * 增加默认停留时间，由 1.2s 增加到 1.6s，更持久！
 
 
-### V1.0.0 (2015.06.10)
+### V 1.0.0 (2015.06.10)
 
 * 添加提示“信息”功能：
 
@@ -126,7 +131,7 @@ In me the tiger sniffs the rose.
 * 更换“成功”、“失败”的图片，更加友好 :)
 
 
-### V0.0.1 (2015.05.05)
+### V 0.0.1 (2015.05.05)
 
 * 适配处女座开发者，统一以下方法的长度：
 
@@ -141,7 +146,7 @@ In me the tiger sniffs the rose.
 * 优化显示效果。Label 的字体大小现在是 15px，原来是 14px。
 
 
-### V0.0.1 (2015.04.16)
+### V 0.0.1 (2015.04.16)
 
 * 更简单了！
 

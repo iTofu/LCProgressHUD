@@ -13,12 +13,10 @@
 @implementation LCProgressHUD
 
 + (instancetype)sharedHUD {
-
-    static LCProgressHUD *hud;
+    static id hud;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-
-        hud = [[LCProgressHUD alloc] initWithWindow:[UIApplication sharedApplication].keyWindow];
+        hud = [[self alloc] initWithWindow:[UIApplication sharedApplication].keyWindow];
     });
     return hud;
 }
@@ -47,6 +45,10 @@
             UIImageView *sucView = [[UIImageView alloc] initWithImage:sucImage];
             hud.customView = sucView;
             [hud hide:YES afterDelay:2.0f];
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [hud setShowNow:NO];
+            });
         }
             break;
 
@@ -59,6 +61,10 @@
             UIImageView *errView = [[UIImageView alloc] initWithImage:errImage];
             hud.customView = errView;
             [hud hide:YES afterDelay:2.0f];
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [hud setShowNow:NO];
+            });
         }
             break;
 
@@ -77,6 +83,10 @@
             UIImageView *infoView = [[UIImageView alloc] initWithImage:infoImage];
             hud.customView = infoView;
             [hud hide:YES afterDelay:2.0f];
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [hud setShowNow:NO];
+            });
         }
             break;
 
@@ -122,7 +132,7 @@
 }
 
 + (void)hide {
-
+    
     [[LCProgressHUD sharedHUD] setShowNow:NO];
     [[LCProgressHUD sharedHUD] hide:YES];
 }
