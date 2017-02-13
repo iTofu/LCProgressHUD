@@ -9,6 +9,7 @@
 //  活动指示器
 //  V 1.0.7
 
+#import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
 
 typedef NS_ENUM(NSInteger, LCProgressHUDStatus) {

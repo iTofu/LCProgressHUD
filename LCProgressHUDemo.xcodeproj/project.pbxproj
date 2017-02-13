@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		139C783282CB336D98AAEFDF /* libPods-LCProgressHUDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F25F6FFC2ECA23329E7BEB6 /* libPods-LCProgressHUDemo.a */; };
 		B32758D41BF195DF001792DA /* LCProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B32758CF1BF195DF001792DA /* LCProgressHUD.bundle */; };
 		B32758D51BF195DF001792DA /* LCProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B32758D11BF195DF001792DA /* LCProgressHUD.m */; };
-		B32758DA1BF196CF001792DA /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B32758D91BF196CF001792DA /* MBProgressHUD.m */; };
 		B379ED8C1ADCEC71009570EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B379ED8B1ADCEC71009570EF /* main.m */; };
 		B379ED8F1ADCEC71009570EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B379ED8E1ADCEC71009570EF /* AppDelegate.m */; };
 		B379ED921ADCEC71009570EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B379ED911ADCEC71009570EF /* ViewController.m */; };
@@ -17,6 +17,7 @@
 		B379ED971ADCEC71009570EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B379ED961ADCEC71009570EF /* Images.xcassets */; };
 		B379ED9A1ADCEC71009570EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B379ED981ADCEC71009570EF /* LaunchScreen.xib */; };
 		B379EDA61ADCEC71009570EF /* LCProgressHUDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B379EDA51ADCEC71009570EF /* LCProgressHUDemoTests.m */; };
+		DB8F2F78D78B2769AF37E125 /* libPods-LCProgressHUDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC135E0D264870F33C610F1A /* libPods-LCProgressHUDemoTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,11 +31,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03E043356B09F4C380A050DC /* Pods-LCProgressHUDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCProgressHUDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LCProgressHUDemo/Pods-LCProgressHUDemo.release.xcconfig"; sourceTree = "<group>"; };
+		1F25F6FFC2ECA23329E7BEB6 /* libPods-LCProgressHUDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LCProgressHUDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2250DA752B1E3BD0E4E5214F /* Pods-LCProgressHUDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCProgressHUDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LCProgressHUDemoTests/Pods-LCProgressHUDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		574EE60F86CD785A11357B78 /* Pods-LCProgressHUDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCProgressHUDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LCProgressHUDemo/Pods-LCProgressHUDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B32758CF1BF195DF001792DA /* LCProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LCProgressHUD.bundle; sourceTree = "<group>"; };
 		B32758D01BF195DF001792DA /* LCProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCProgressHUD.h; sourceTree = "<group>"; };
 		B32758D11BF195DF001792DA /* LCProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCProgressHUD.m; sourceTree = "<group>"; };
-		B32758D81BF196CF001792DA /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		B32758D91BF196CF001792DA /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		B379ED861ADCEC71009570EF /* LCProgressHUDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCProgressHUDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B379ED8A1ADCEC71009570EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B379ED8B1ADCEC71009570EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -48,6 +51,8 @@
 		B379ED9F1ADCEC71009570EF /* LCProgressHUDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCProgressHUDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B379EDA41ADCEC71009570EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B379EDA51ADCEC71009570EF /* LCProgressHUDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCProgressHUDemoTests.m; sourceTree = "<group>"; };
+		C261D5CEC2D63C1C41201BBB /* Pods-LCProgressHUDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCProgressHUDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LCProgressHUDemoTests/Pods-LCProgressHUDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC135E0D264870F33C610F1A /* libPods-LCProgressHUDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LCProgressHUDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				139C783282CB336D98AAEFDF /* libPods-LCProgressHUDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB8F2F78D78B2769AF37E125 /* libPods-LCProgressHUDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,23 +85,15 @@
 			path = LCProgressHUD;
 			sourceTree = "<group>";
 		};
-		B32758D71BF196CF001792DA /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				B32758D81BF196CF001792DA /* MBProgressHUD.h */,
-				B32758D91BF196CF001792DA /* MBProgressHUD.m */,
-			);
-			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
 		B379ED7D1ADCEC71009570EF = {
 			isa = PBXGroup;
 			children = (
 				B32758CE1BF195DF001792DA /* LCProgressHUD */,
-				B32758D71BF196CF001792DA /* MBProgressHUD */,
 				B379ED881ADCEC71009570EF /* LCProgressHUDemo */,
 				B379EDA21ADCEC71009570EF /* LCProgressHUDemoTests */,
 				B379ED871ADCEC71009570EF /* Products */,
+				E07CF5C4F5A943B441784A1C /* Pods */,
+				DBEA0F9DE5E11DBDC2EA1154 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +147,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DBEA0F9DE5E11DBDC2EA1154 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F25F6FFC2ECA23329E7BEB6 /* libPods-LCProgressHUDemo.a */,
+				EC135E0D264870F33C610F1A /* libPods-LCProgressHUDemoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E07CF5C4F5A943B441784A1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				574EE60F86CD785A11357B78 /* Pods-LCProgressHUDemo.debug.xcconfig */,
+				03E043356B09F4C380A050DC /* Pods-LCProgressHUDemo.release.xcconfig */,
+				C261D5CEC2D63C1C41201BBB /* Pods-LCProgressHUDemoTests.debug.xcconfig */,
+				2250DA752B1E3BD0E4E5214F /* Pods-LCProgressHUDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B379EDA91ADCEC71009570EF /* Build configuration list for PBXNativeTarget "LCProgressHUDemo" */;
 			buildPhases = (
+				9897C371C894D118C7E35794 /* [CP] Check Pods Manifest.lock */,
 				B379ED821ADCEC71009570EF /* Sources */,
 				B379ED831ADCEC71009570EF /* Frameworks */,
 				B379ED841ADCEC71009570EF /* Resources */,
+				2177FCBA229536E36C1C11D9 /* [CP] Embed Pods Frameworks */,
+				53AC1F753024E70766EA35B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,9 +194,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B379EDAC1ADCEC71009570EF /* Build configuration list for PBXNativeTarget "LCProgressHUDemoTests" */;
 			buildPhases = (
+				E61D81FA3A5592CE062B6235 /* [CP] Check Pods Manifest.lock */,
 				B379ED9B1ADCEC71009570EF /* Sources */,
 				B379ED9C1ADCEC71009570EF /* Frameworks */,
 				B379ED9D1ADCEC71009570EF /* Resources */,
+				8FE9BAF9FC9971458B9A0A3D /* [CP] Embed Pods Frameworks */,
+				A073D16DB7733BD177A034E2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +269,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2177FCBA229536E36C1C11D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LCProgressHUDemo/Pods-LCProgressHUDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53AC1F753024E70766EA35B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LCProgressHUDemo/Pods-LCProgressHUDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FE9BAF9FC9971458B9A0A3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LCProgressHUDemoTests/Pods-LCProgressHUDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9897C371C894D118C7E35794 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A073D16DB7733BD177A034E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LCProgressHUDemoTests/Pods-LCProgressHUDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E61D81FA3A5592CE062B6235 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B379ED821ADCEC71009570EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -251,7 +369,6 @@
 			files = (
 				B379ED921ADCEC71009570EF /* ViewController.m in Sources */,
 				B379ED8F1ADCEC71009570EF /* AppDelegate.m in Sources */,
-				B32758DA1BF196CF001792DA /* MBProgressHUD.m in Sources */,
 				B379ED8C1ADCEC71009570EF /* main.m in Sources */,
 				B32758D51BF195DF001792DA /* LCProgressHUD.m in Sources */,
 			);
@@ -379,6 +496,7 @@
 		};
 		B379EDAA1ADCEC71009570EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 574EE60F86CD785A11357B78 /* Pods-LCProgressHUDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LCProgressHUDemo/Info.plist;
@@ -391,6 +509,7 @@
 		};
 		B379EDAB1ADCEC71009570EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03E043356B09F4C380A050DC /* Pods-LCProgressHUDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LCProgressHUDemo/Info.plist;
@@ -403,6 +522,7 @@
 		};
 		B379EDAD1ADCEC71009570EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C261D5CEC2D63C1C41201BBB /* Pods-LCProgressHUDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -422,6 +542,7 @@
 		};
 		B379EDAE1ADCEC71009570EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2250DA752B1E3BD0E4E5214F /* Pods-LCProgressHUDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
