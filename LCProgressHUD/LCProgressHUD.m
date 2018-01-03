@@ -32,7 +32,7 @@
     [hud setMinSize:CGSizeMake(BGVIEW_WIDTH, BGVIEW_WIDTH)];
     [[UIApplication sharedApplication].keyWindow addSubview:hud];
 
-    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"LCProgressHUD" ofType:@"bundle"];
+    NSString *bundlePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"LCProgressHUD" ofType:@"bundle"];
 
     switch (status) {
 
