@@ -67,6 +67,11 @@ In me the tiger sniffs the rose.
 ## 更新日志 Update Logs
 
 
+### V 1.0.7 (2018.01.03)
+
+* 修复 bundle 路径问题。
+
+
 ### V 1.0.7 (2017.02.13)
 
 * Fix [Issue 2](https://github.com/iTofu/LCProgressHUD/issues/2).
