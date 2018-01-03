@@ -64,10 +64,10 @@ In me the tiger sniffs the rose.
 
 
 
-## 更新日志 Update Logs
+## 更新日志 ChangeLog
 
 
-### V 1.0.7 (2018.01.03)
+### V 1.0.8 (2018.01.03)
 
 * 修复 bundle 路径问题。
 
@@ -175,11 +175,11 @@ In me the tiger sniffs the rose.
 
 ## 联系 Support
 
-* 发现问题请 Issue，谢谢:-)
+* 发现问题请提 Issue，谢谢:-)
 
-* Mail: devtip@163.com
+* Mail: `echo bGVvZGF4aWFAZ21haWwuY29tCg== | base64 -D`
 
-* Blog: http://LeoDev.me
+* Blog: https://LeoDev.me
 
 
 ## 授权 License
