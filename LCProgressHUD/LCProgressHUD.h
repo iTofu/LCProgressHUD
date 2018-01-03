@@ -2,12 +2,12 @@
 //  Created by 刘超 on 15/4/14.
 //  Copyright (c) 2015年 Leo. All rights reserved.
 //
-//  Mail:   mailto:devtip@163.com
-//  GitHub: http://github.com/LeoiOS
+//  Mail:   mailto:leodaxia@gmail.com
+//  GitHub: https://github.com/iTofu
 //  如有问题或建议请给我发 Email, 或在该项目的 GitHub 主页提 Issue, 谢谢 :)
 //
 //  活动指示器
-//  V 1.0.7
+//  V 1.0.8
 
 #import <MBProgressHUD/MBProgressHUD.h>
 

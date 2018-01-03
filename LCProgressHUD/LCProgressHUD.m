@@ -13,7 +13,7 @@
 @implementation LCProgressHUD
 
 + (instancetype)sharedHUD {
-    static id hud;
+    static LCProgressHUD *hud;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         hud = [[self alloc] initWithWindow:[UIApplication sharedApplication].keyWindow];

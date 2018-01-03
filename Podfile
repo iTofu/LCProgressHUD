@@ -6,7 +6,7 @@ target 'LCProgressHUDemo' do
   # use_frameworks!
 
   # Pods for LCProgressHUDemo
-  pod 'MBProgressHUD', '~> 0.9.1'
+  pod 'MBProgressHUD', '~> 0.9.2'
 
   target 'LCProgressHUDemoTests' do
     inherit! :search_paths
